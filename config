@@ -744,5 +744,3 @@ mode "$mode_gaps_outer" {
 exec_always compton --config ~/.config/i3/compton.conf
 
 focus_follows_mouse no
-
-

@@ -1,7 +1,17 @@
 #!/bin/sh
 lock() {
     #i3lock -c 222222
-    i3lock -i ~/.config/i3/lockscreen.png -t
+    #i3lock -i ~/.config/i3/lockscreen.png -t
+    #i3lock -i /usr/share/backgrounds/* -t
+    PICTURE=/tmp/i3lock.png
+    SCREENSHOT="scrot $PICTURE"
+
+    BLUR="5x4"
+
+    $SCREENSHOT
+    convert $PICTURE -blur $BLUR $PICTURE
+    i3lock -i $PICTURE
+    rm $PICTURE
 }
 
 case "$1" in

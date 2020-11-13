@@ -306,7 +306,7 @@ exec --no-startup-id nm-applet
 exec variety
 exec mintupdate-launcher
 exec volti
-exec dunst -conf ~/.config/i3/dunstrc
+#exec dunst -conf ~/.config/i3/dunstrc
 
 
 #workspace related applications (use --no-startup-id if needed)
